@@ -7,6 +7,8 @@ module.exports = {
         const id = crypto.randomBytes(4).toString('HEX');
         const { name, email, whatsapp, city, uf} = request.body;
 
+
+        
         await connection('ongs').insert({
             id,
             name,
